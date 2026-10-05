@@ -1,0 +1,24 @@
+{
+    "name": "dataset",
+    "version": "0.0.0",
+    "description": "Dataset definition management web service",
+    "engines": {
+        "arangodb": "^3.0.0"
+    },
+    "author": "Milko Skofic",
+    "license": "Apache 2",
+    "main": "main.js",
+    "scripts": {
+        "setup": "scripts/setup.js",
+        "teardown": "scripts/teardown.js"
+    },
+    "configuration": {
+        "kDatasetCollectionName": {
+            "description": "Dataset collection name. Set it to the name of the collection that will store the dataset definitions.",
+            "type": "string",
+            "required": true,
+            "default": "Dataset"
+        }
+    },
+    "tests": "test/**/*.js"
+}
